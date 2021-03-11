@@ -4,12 +4,14 @@ const ToDoItem = (props) => {
   const {
     item,
     indexItem,
-    handleOnClickCheck
+    handleOnClickCheck,
+    handleOnClickEdit,
+    deleteTask
   } = props;
 
   return (
     <div className="d-flex flex-row">
-      <div className="col-8 d-flex align-items-center">
+      <div className="col-8 d-flex align-items-center justify-content-center">
         <input
           className=""
           type="checkbox"
@@ -18,7 +20,11 @@ const ToDoItem = (props) => {
         />
         <p className="">{item.name}</p>
       </div>
-      <span className="col-4" onClick={() => console.log("se clickeo")}>Edit</span>
+      <div className="d-flex">
+        <span onClick={() => handleOnClickEdit(item)} className="d-flex justify-content-end">Edit</span>
+          /
+          <span onClick={() => deleteTask(item.id)} className="d-flex justify-content-end">Remove</span>
+      </div>
     </div>
   );
 }
