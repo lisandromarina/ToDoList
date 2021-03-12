@@ -2,14 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## We need
+## We need for the front
 
+
+"Yarn": "1.22.10"
 "axios": "^0.21.1".
 "react": "^17.0.1",
 "react-dom": "^17.0.1",
 "react-router": "^5.2.0",
 "react-router-dom": "^5.2.0",
 
+## We need for the Back
+"MySQL": "8.2.03"
+"Java": "11.0.10"
 ## Available Scripts
 
 In the project directory, you can run:
